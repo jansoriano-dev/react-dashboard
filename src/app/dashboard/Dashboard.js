@@ -291,10 +291,10 @@ export class Dashboard extends Component {
             <div className="card bg-gradient-danger card-img-holder text-white">
               <div className="card-body">
                 <img src={require("../../assets/images/dashboard/circle.svg")} className="card-img-absolute" alt="circle" />
-                <h4 className="font-weight-normal mb-3">Weekly Sales <i className="mdi mdi-chart-line mdi-24px float-right"></i>
+                <h4 className="font-weight-normal mb-3">Returned Transactions<i className="mdi mdi-chart-line mdi-24px float-right"></i>
                 </h4>
-                <h2 className="mb-5">$ 15,0000</h2>
-                <h6 className="card-text">Increased by 60%</h6>
+                <h2 className="mb-5">PHP 15,0000</h2>
+                <h6 className="card-text">Total Orders: 20</h6>
               </div>
             </div>
           </div>
@@ -302,10 +302,10 @@ export class Dashboard extends Component {
             <div className="card bg-gradient-info card-img-holder text-white">
               <div className="card-body">
                 <img src={require("../../assets/images/dashboard/circle.svg")} className="card-img-absolute" alt="circle" />
-                <h4 className="font-weight-normal mb-3">Weekly Orders <i className="mdi mdi-bookmark-outline mdi-24px float-right"></i>
+                <h4 className="font-weight-normal mb-3">Replaced Orders <i className="mdi mdi-bookmark-outline mdi-24px float-right"></i>
                 </h4>
-                <h2 className="mb-5">45,6334</h2>
-                <h6 className="card-text">Decreased by 10%</h6>
+                <h2 className="mb-5">PHP 7,800</h2>
+                <h6 className="card-text">Total Replaced Orders: 12</h6>
               </div>
             </div>
           </div>
@@ -313,10 +313,10 @@ export class Dashboard extends Component {
             <div className="card bg-gradient-success card-img-holder text-white">
               <div className="card-body">
                 <img src={require("../../assets/images/dashboard/circle.svg")} className="card-img-absolute" alt="circle" />
-                <h4 className="font-weight-normal mb-3">Visitors Online <i className="mdi mdi-diamond mdi-24px float-right"></i>
+                <h4 className="font-weight-normal mb-3">Refunded Transactions <i className="mdi mdi-diamond mdi-24px float-right"></i>
                 </h4>
-                <h2 className="mb-5">95,5741</h2>
-                <h6 className="card-text">Increased by 5%</h6>
+                <h2 className="mb-5">PHP 7,200</h2>
+                <h6 className="card-text">Total Refunded Orders: 8</h6>
               </div>
             </div>
           </div>
@@ -329,17 +329,18 @@ export class Dashboard extends Component {
                   <h4 className="card-title float-left">Visit And Sales Statistics</h4>
                   <div id="visit-sale-chart-legend" className="rounded-legend legend-horizontal legend-top-right float-right">
                     <ul>
+                    <li>
+                        <span className="legend-dots bg-danger">
+                        </span>Returns
+                      </li>
                       <li>
                         <span className="legend-dots bg-primary">
-                        </span>CHN
+                        </span>Replaced
                       </li>
-                      <li>
-                        <span className="legend-dots bg-danger">
-                        </span>USA
-                      </li>
+
                       <li>
                         <span className="legend-dots bg-info">
-                        </span>UK
+                        </span>Refunds
                       </li>
                     </ul>
                   </div>
